@@ -67,7 +67,7 @@ async function syncGifs() {
     console.log(`Upserting ${allGifs.length} gif URLs to Supabase...`);
 
     const { data, error } = await supabase
-      .from('exercise_gifs')
+      .from('exercises_gifUrls')
       .upsert(allGifs, { onConflict: 'id' });
 
     if (error) {
