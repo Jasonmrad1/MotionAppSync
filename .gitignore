@@ -1,0 +1,38 @@
+# Node modules folder
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# dotenv environment variables file
+.env
+.env.local
+.env.*.local
+
+# MacOS system files
+.DS_Store
+
+# VSCode settings
+.vscode/
+
+# Optional coverage directory
+coverage/
+
+# Optional build directories
+dist/
+build/
+
+# Ignore any other files you don’t want committed
