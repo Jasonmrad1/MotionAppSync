@@ -1,5 +1,5 @@
-import axios from 'axios';
-import { createClient } from '@supabase/supabase-js';
+const axios = require('axios');
+const { createClient } = require('@supabase/supabase-js');
 
 const supabaseUrl = 'https://jfshmpnmyjtzfyqpmohc.supabase.co';
 const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Impmc2htcG5teWp0emZ5cXBtb2hjIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1MjMwODkzMSwiZXhwIjoyMDY3ODg0OTMxfQ.L2Hkg8oZ-4VXhXU52n-bgevL6t4yx-2eQvumlygSoRQ'; // Use service role key from Supabase dashboard
