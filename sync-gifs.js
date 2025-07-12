@@ -1,14 +1,15 @@
 const axios = require('axios');
 const { createClient } = require('@supabase/supabase-js');
 
-const supabaseUrl = 'https://jfshmpnmyjtzfyqpmohc.supabase.co';
-const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Impmc2htcG5teWp0emZ5cXBtb2hjIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1MjMwODkzMSwiZXhwIjoyMDY3ODg0OTMxfQ.L2Hkg8oZ-4VXhXU52n-bgevL6t4yx-2eQvumlygSoRQ'; // Use service role key from Supabase dashboard
+const supabaseUrl = process.env.SUPABASE_URL;
+const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+const rapidApiKey = process.env.RAPIDAPI_KEY;
 
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 const apiBase = 'https://exercisedb.p.rapidapi.com/exercises';
 const headers = {
-  "X-RapidAPI-Key": "dd668cd173msh87b29db262a02cfp1b6f08jsncf7782b3545d",
+  "X-RapidAPI-Key": rapidApiKey,
   "X-RapidAPI-Host": "exercisedb.p.rapidapi.com"
 };
 
